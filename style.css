@@ -1,0 +1,323 @@
+body {
+  font-family: 'Alegreya SC', serif;
+  font-size: 14px;
+}
+#card-tmpl {
+  display: none;
+}
+.card-title {
+  height: auto;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  height: 5rem;
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
+.block-ellipsis {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: auto;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#m-card-tel {
+  width: 100%;
+}
+.my-style_nav {
+  background-color: #f3f35e;
+}
+@media (min-width: 768px) {
+  .navbar-container {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    height: 100vh;
+  }
+  .navbar-container .navbar {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100%;
+  }
+  .navbar-container .navbar-collapse {
+    align-items: flex-start;
+  }
+  .navbar-container .nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .navbar-container .navbar-nav {
+    flex-direction: column !important;
+  }
+}
+/*.navbar-container,.bd-example,.modal-dialog{
+display: none;
+}*/
+.open-tmpl {
+  display: none;
+}
+.display_none {
+  display: none;
+}
+.brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+#slider-range {
+  height: 20px;
+  background-color: aqua;
+}
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+.mapCard {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+/* menu */
+.menu_button {
+  color: #fff;
+  border-radius: 40%;
+}
+.menu_button #intrng,
+.menu_button #create_new,
+.menu_button .btn_open_menu,
+.menu_button .btn_m {
+  background-color: #2c96ec;
+  border: none;
+  color: #fff;
+}
+.menu_button #intrng:hover {
+  background-color: #0d6ebd;
+}
+.menu_button #create_new:hover {
+  background-color: #0d6ebd;
+}
+.menu_button .btn_open_menu:hover {
+  background-color: #0d6ebd;
+}
+.menu_button .btn_m:hover {
+  background-color: #0d6ebd;
+  color: #fff;
+}
+.menu_button .btn_open_menu:hover {
+  background-color: #0d6ebd;
+}
+.menu_button #flat_menu,
+.menu_button #house_menu {
+  background-color: #fff;
+}
+.menu_button .btn_open_menu {
+  border-radius: 40%;
+}
+.menu_button .btn_m:focus {
+  background-color: #0d6ebd;
+}
+/* end menu */
+/* start slider */
+.info_slider {
+  font-family: 'Caveat', cursive;
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #141414;
+  font-size: 70px;
+}
+/* slider end */
+/* start filter */
+.head_filter {
+  font-size: 40px;
+}
+.head_filter_mini {
+  font-size: 25px;
+}
+.form-check-label {
+  font-size: 20px;
+}
+/* end filter */
+.head_filter_mini {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  border-radius: 4px;
+  background-color: rgba(255, 255, 0, 0);
+}
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  left: 3px;
+  top: 4px;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 4px solid #2c96ec;
+  border-bottom: 4px solid #2c96ec;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+input[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+}
+input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+input[type="checkbox"]:checked + label:before {
+  background-color: #ffff00;
+  border: 1px solid #ffff00;
+}
+#btn_reset {
+  border: none;
+  background-color: red;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  border-radius: 10%;
+}
+.inputPrice {
+  width: 30px;
+}
+.btn-group-filter {
+  margin-top: 30px;
+}
+#more {
+  display: block;
+  margin: 0 auto;
+}
+/* start footer */
+.page_footer {
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer_wrap {
+  max-width: 170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer_logo_name {
+  margin-bottom: 16px;
+}
+.footer_logo_name a:hover {
+  text-decoration: none;
+}
+.footer_logo_name .footer_logo_text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  cursor: pointer;
+}
+.footer_social {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_social .social_link:hover {
+  color: #5474fd;
+}
+.footer_social .link_youtube:hover {
+  color: red;
+}
+.favorite_off {
+  float: right;
+  width: 29px;
+  height: 29px;
+  margin-top: 2px;
+  border: none;
+  background-color: #1b49c7;
+  color: yellow;
+  opacity: 0.5;
+  border-radius: 10%;
+}
+.favorite_on {
+  float: right;
+  width: 29px;
+  height: 29px;
+  border-radius: 10%;
+  color: yellow;
+  border: none;
+  background-color: #1b49c7;
+}
+.card-sm {
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+.main-content {
+  margin-top: 40px;
+}
+#more {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.already_see {
+  margin-top: 60px;
+}
+.already-see_title {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+}
+.section_seen {
+  margin-top: 40px;
+}
+.card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+  .row-filter {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .filtr-floor {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+}
