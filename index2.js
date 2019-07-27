@@ -99,11 +99,7 @@ function collectDataFromModal($modal) {
 
   _.each(MODAL_FIELDS, (input) => {
 
-    result[input.getKey()] = (($modal.find(input.getId()).val()) + {
-      "favorite": false,
-      "alreadySee": false
-
-    });
+    result[input.getKey()] = (($modal.find(input.getId()).val()));
 
   });
   console.log(result);
@@ -132,10 +128,10 @@ function updateDataInUi(card, collectedData) {
     .text(collectedData.info);
   $card.find('#author')
     .text(collectedData.author)
-  $card.find('#card-rooms')
+  $card.find("Кількість кімнат:" + '#card-rooms')
     .text(collectedData.rooms);
   $card.find('#card-floor')
-    .text(collectedData.floor);
+    .text("Поверх: " + collectedData.floor);
     $card.find('.area')
     .text(collectedData.area); 
     $card.find('.price')
